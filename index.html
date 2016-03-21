@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" href="bootstrap.min.css">
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -17,7 +18,6 @@
   ga('send', 'pageview');
 
 </script>
-
 
 
 </head>
@@ -51,7 +51,7 @@
 
 
 <div class="icondown"> 
-<a href="#step2"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" xml:space="preserve" style="" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41421"><path d="M50,9.95497c22.0914,0 40,17.9086 40,40c0,22.0914 -17.9086,40 -40,40c-22.0914,0 -40,-17.9086 -40,-40c0,-22.0914 17.9086,-40 40,-40ZM46.4792,67.5503c-4.65217,-4.65217 -19.4483,-19.4483 -24.1005,-24.1005c-0.375072,-0.375074 -0.585784,-0.883783 -0.585782,-1.41422c1.6613e-06,-0.530433 0.210717,-1.03914 0.585791,-1.41421c1.23235,-1.23235 3.01028,-3.01028 4.24263,-4.24263c0.375072,-0.375074 0.883779,-0.585789 1.41421,-0.585791c0.530433,-1.64159e-06 1.03914,0.210711 1.41422,0.585782l20.5147,20.5147l20.5147,-20.5147c0.375073,-0.375075 0.883783,-0.58579 1.41422,-0.585789c0.530435,3.2521e-07 1.03914,0.210716 1.41422,0.585791c1.23235,1.23235 3.01028,3.01028 4.24263,4.24263c0.375075,0.375073 0.585791,0.883782 0.585791,1.41422c2.8916e-07,0.530435 -0.210715,1.03914 -0.585789,1.41422c-4.9194,4.9194 -21.2522,21.2522 -26.1716,26.1716c-0.375073,0.375075 -0.883783,0.58579 -1.41422,0.585789c-0.530435,-3.2521e-07 -1.03914,-0.210716 -1.41422,-0.585791l-2.07106,-2.07106Z" style="" fill="#000"/></svg></a>
+<a href="#step2" style="color:#ddd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 125" version="1.1" xml:space="preserve" style="" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41421"><path d="M50,9.95497c22.0914,0 40,17.9086 40,40c0,22.0914 -17.9086,40 -40,40c-22.0914,0 -40,-17.9086 -40,-40c0,-22.0914 17.9086,-40 40,-40ZM46.4792,67.5503c-4.65217,-4.65217 -19.4483,-19.4483 -24.1005,-24.1005c-0.375072,-0.375074 -0.585784,-0.883783 -0.585782,-1.41422c1.6613e-06,-0.530433 0.210717,-1.03914 0.585791,-1.41421c1.23235,-1.23235 3.01028,-3.01028 4.24263,-4.24263c0.375072,-0.375074 0.883779,-0.585789 1.41421,-0.585791c0.530433,-1.64159e-06 1.03914,0.210711 1.41422,0.585782l20.5147,20.5147l20.5147,-20.5147c0.375073,-0.375075 0.883783,-0.58579 1.41422,-0.585789c0.530435,3.2521e-07 1.03914,0.210716 1.41422,0.585791c1.23235,1.23235 3.01028,3.01028 4.24263,4.24263c0.375075,0.375073 0.585791,0.883782 0.585791,1.41422c2.8916e-07,0.530435 -0.210715,1.03914 -0.585789,1.41422c-4.9194,4.9194 -21.2522,21.2522 -26.1716,26.1716c-0.375073,0.375075 -0.883783,0.58579 -1.41422,0.585789c-0.530435,-3.2521e-07 -1.03914,-0.210716 -1.41422,-0.585791l-2.07106,-2.07106Z" style="" fill="#000"/></svg></a>
 </div>
 
 <div class="maincontent col-md-12">
@@ -182,6 +182,7 @@ Hence, we cooked up the Pi Index (affectionately called the Peace Index) to meas
 </div>
 <div class="col-md-12" id="pidisplay" style="float:left;width:100%;height:100px"></div>
  </div>
+ <div class="col-md-12" id="pipercentile" style="float:left;width:100%;height:40px;text-align:center;font-weight:bold;font-size:1.1em"></div>
 <div class="col-md-12" style="float:left;text-align:center">
 The Pi Index ranges from 0 to 10 and is an aproximate estimate of your happiness. Higher the Pi index, higher is the probability of you being a happy person holistically. The participants in the survey weren't told that these particular questions would be ingredients of the Happiness Formula. For the computed Pi Index to be of significance, please ensure that your answers are indeed true.
 
@@ -190,11 +191,11 @@ The Pi Index ranges from 0 to 10 and is an aproximate estimate of your happiness
 <div class="maincontent col-md-6">
 <h3 class="titles">Points of Information</h3>
 
-<div class="contentp"><ul><li>By the end of the survey period, we received a total of <div class="emphasis">763</div> entries. Out of them, <div class="emphasis">710</div> passed all fourteen spam checks, which made it to the sample set.</li>
+<div class="contentp"><ul><li>By the end of the survey period, we received a total of <div class="emphasis">763</div> entries. Out of them, <div class="emphasis">710</div> passed all <a onclick="alert('The fourteen checks were:\n\n1. Entered Hall: SN, MT, RLB or SAM and Sex: Male\n2. Entered Hall: Not SN, MT, RLB or SAM and Sex: Female\n3. Entered Society: Multiple entries in Encore, Pravaah, Druheen and Prasthanam\n4. Number of Relationships > 10 or < 0\n5. Invalid Pincode\n6. Year: UG and Hall: PG\n7. Number of Societies > 7\n8. Society: Both TSA and Awaaz\n9. Society:SSAP and Hall!=AR\n10. Society: Mekanika and Hall != ME\n11. Dep = SMST and Year = UG\n12. All Default Values\n13,14. All Repeated Entries (All max or min)\n')">fourteen spam checks</a>, which made it to the sample set.</li>
 
 <li>The survey only invited current second year, third year, fourth year, fifth year UG batches and second year PG batch to ensure participants have sufficient exposure with the campus lifestyle.</li>
 
-<li>It is ensured that at least 10% of every demographics is represented in our sample set for the analysis to hold significance. For example, if the strength of ARP is 140 students, at least 14 entries from ARP are analyzed. </li>
+<li>It is ensured that at least 10% of every demographics is represented in our sample set for the analysis to hold significance. For example, if the strength of ARP is 140 students, at least 14 entries from ARP are analyzed. Having said that, we acknowledge that the results of the survey may not be the best representative of the overall population of the campus. Whenever a statement such as 'X% of the students think...' is made, it implies X% of the 710 respondents and not the entire IIT campus.</li>
 
 <li>Considering the previous point, all demographics unadequately represented in the filtered sample set are not part of their domain specific topic results. These include Department of Chemistry and all non-UG Halls. Their entries have not been included in Department specific and Hall specific topics.</li>
 
@@ -204,7 +205,7 @@ The Pi Index ranges from 0 to 10 and is an aproximate estimate of your happiness
 </div>
 </div>
 <div class=" maincontent col-md-6"> 
-<h3 class="titles">The Most Common KGPian</h3>
+<h3 class="titles">The Most Common Respondent</h3>
 
 
 <div class="avbulletedpart">
@@ -338,7 +339,7 @@ $("#kool").empty();
 
 
 <div class="maincontent cathead col-md-12" id="cgpa"> 
-CGPA
+<a href="#step2" style="color:#ddd">CGPA</a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li>One of the strongest indicators of satisfaction.</li>
@@ -350,7 +351,7 @@ CGPA
 <div class="catind">Happiness Index Profile</div>
 <div class="cghpindtxt catbigtxt" style="text-align:center;vertical-align:middle">
 </div>
-
+<h5 style="text-align:center">The numbers on the bars represent Percentage Satisfaction. 100 implies Complete Satisfaction.</h5>
 </div>
 
 <div class="col-md-12" style="text-align:center;vertical-align:middle;margin-top:30px">
@@ -377,6 +378,7 @@ CGPA
 <div class="catind col-md-12">Agreement Profile</div>
 <div class="catbigtxt agrindtxt">
 </div>
+
 <div class="arenaagr col-md-12" style="text-align:center;vertical-align:middle">
 </div>
 
@@ -417,12 +419,12 @@ CGPA
 
 
 <div class="maincontent cathead col-md-12" id="dep"> 
-Department
+<a href="#step2" style="color:#ddd">Department</a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li>Subtle variations in constrast with the stark CGPA variations.</li>
 <li>The Happiest Departments (HS,CH,ME,MA) aren't necessarily the most Satisfied ones (CSE,ECE).</li>
-<li>Desire to stay in the core field is almost independent of satisfaction with Department</li>
+<li>Desire to stay in the core field is almost independent of satisfaction with Department.</li>
 </ul>
 
 </div>
@@ -466,7 +468,7 @@ Department
 <!--Society-->
 
 <div class="maincontent cathead col-md-12" id="society"> 
-Society
+<a href="#step2" style="color:#ddd">Society</a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li>61% of the campus is involved in no society.</li>
@@ -489,7 +491,7 @@ Society
 <!--HALL-->
 
 <div class="maincontent cathead col-md-12" id="hall"> 
-Hall of Residence
+<a href="#step2" style="color:#ddd">Hall of Residence</a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li>The Happiest Halls (RP,LBS) also have the highest satisfaction levels in terms of Friend Circle and Social Life.</li>
@@ -510,11 +512,11 @@ Hall of Residence
 <!--YEAR-->
 
 <div class="maincontent cathead col-md-12" id="year"> 
-Year of Study
+<a href="#step2" style="color:#ddd">Year of Study</a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li>Most parameters spike at Fifth Year like satisfaction with CGPA, Body Image, IIT and Hall.</li>
-<li>Satisfaction with Social Life decreases with Year</li>
+<li>Satisfaction with Social Life decreases with Year.</li>
 <li>Fifth and Second Years are the happiest of all batches. However, Fifth years are satisfied with most parameters whereas Second Years aren't.</li></ul>
 
 </div>
@@ -534,12 +536,13 @@ Year of Study
 <!--GENDER-->
 
 <div class="maincontent cathead col-md-12" id="gen"> 
-<span style="color:#e40303">G</span><span style="color:#ff8c00">e</span><span style="color:#ffed00">n</span><span style="color:#008026">d</span><span style="color:#004dff">e</span><span style="color:#750787">r</span>
+<a href="#step2" style="color:#ddd"><span style="color:#e40303">G</span><span style="color:#ff8c00">e</span><span style="color:#ffed00">n</span><span style="color:#008026">d</span><span style="color:#004dff">e</span><span style="color:#750787">r</span></a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li><b>What do 'Queer' and 'Questioning' mean? Click <a href="http://ok2bme.ca/resources/kids-teens/what-does-lgbtq-mean/">here</a> to know.</b></li>
 <li>(M,F) = (Male,Female) | Gay = Homosexual Male | Lesbian = Homosexual Female | Straight = Heterosexual</li>
 <li>In spite of the decent satisfaction levels, LGBTQ students have low happiness scores compared to their straight counterparts.</li>
+<li>Question: <b>How strongly do you agree with 'I am not as happy as I was in my first year'?</b> 0 implying Neutral, -100 being Strongly Disagree and +100 being Strongly Agree; the average score for <ul><li>Straight Females: -17</li><li>Straight Males: -8</li><li>Gays: +15</li><li>Bisexual Males: +23</li><li>Queer Male: -32</li><li>Queer Female: -13</li><li>Questioning Male:-3</li></ul></li>
 <li>While the majority of straight students reported to have tackled depression successfully (78% in straight males and 81% in straight females), only a fraction of the students of the LGBT community have overcome depression. (33% in Bisexual Males, 50% in Homosexual Males and Homosexual Females.)
 <li>We urge the student community to be more sensitive of our gender diversity to make the campus a more open place for everybody. Our insensitivity could push a closeted friend into depression. 
 <li>If you wish to stand up for a more gender diverse campus, you can reach the Campus' LGBTQ Support group <a href="https://www.facebook.com/ambar.iitkgp">here</a>. If you are a closested student, we understand it can be tough, but remember that <a href="https://www.youtube.com/watch?v=QUQsqBqxoR4&list=PLkaz5799aQgo2YTvem83zSIhaadoiOBfg">it gets better.</a></li>
@@ -559,7 +562,7 @@ Year of Study
 </div>
 <!--REL-->
 <div class="maincontent cathead col-md-12" id="relationship"> 
-Relationships
+<a href="#step2" style="color:#ddd">Relationships</a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li>Analogous to Friend Circle, Relationships follow a linear variation with Happiness Levels.</li>
@@ -580,7 +583,7 @@ Relationships
 </div>
 <!--FRIENDSHIPS-->
 <div class="maincontent cathead col-md-12" id="friendship"> 
-Friendships
+<a href="#step2" style="color:#ddd">Friendships</a>
 </div>
 <div class="catdescr col-md-12">
 <ul>
@@ -600,7 +603,7 @@ Friendships
 </div>
 <!--ADDICTIONS-->
 <div class="maincontent cathead col-md-12" id="addictions"> 
-Addictions
+<a href="#step2" style="color:#ddd">Addictions</a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li>46% of the campus has never consumed cigarette, weed, alcohol or any other drug.</li>
@@ -620,6 +623,7 @@ Addictions
 <li>11% students said their health had gone worse.</li>
 </ul>
 </li>
+<li>Question: <b>How strongly do you agree with 'I am not as happy as I was in my first year'?</b> 0 implying Neutral, -100 being Strongly Disagree and +100 being Strongly Agree; the average score for <ul><li>No Addicition: -5</li><li>Occasional Weed Users: -8</li><li>Frequent Weed Users: +11</li><li>Occasional Cigarette Smokers: +6</li><li>Frequent Cigarette Smokers: +4</li><li>Occasional Alcohol Consumers: -3</li><li>Frequent Alcohol Consumers:-6</li></ul></li>
 </ul>
 
 </div>
@@ -637,7 +641,7 @@ Addictions
 </div>
 <!--NATIVE-->
 <div class="maincontent cathead col-md-12" id="native"> 
-Native Place
+<a href="#step2" style="color:#ddd">Native Place</a>
 </div>
 <div class="catdescr col-md-12">
 <ul><li>The North Privilege: North Indian students apparently are the most satisfied of all regional demographics.</li>
@@ -659,7 +663,7 @@ Native Place
 </div>
 <!--PEACE-->
 <div class="maincontent cathead col-md-12" id="peace"> 
-Peace of Mind
+<a href="#step2" style="color:#ddd">Peace of Mind</a>
 </div>
 <div class="catdescr col-md-12">
 <ul>
@@ -730,7 +734,7 @@ $("#entbody").empty();
 
 <!--FUN-->
 <div class="maincontent cathead col-md-12" id="fun"> 
-Just for Fun
+<a href="#step2" style="color:#ddd">Just for Fun</a>
 </div>
 <div class="catdescr col-md-12">
 Some stats just because.
@@ -798,7 +802,7 @@ $("#entabody").empty();
 
 <!--END-->
 <div class="maincontent cathead col-md-12" id="end"> 
-Conclusion
+<a href="#step2" style="color:#ddd">Conclusion</a>
 </div>
 <div class="catdescr col-md-12">
 <ul>
@@ -892,16 +896,17 @@ The study left us with many questions and thoughts. Is a happier life a 'better'
     var pi_c4=parseInt(pi_c45_lib[$('input[name=rangeInput2]').val()-1]);
     var pi_c5=parseInt(pi_c45_lib[$('input[name=rangeInput3]').val()-1]);
 
-    console.log("pi_c1 is "+pi_c1);
-    console.log("pi_c2 is "+pi_c2);
-    console.log("pi_c3 is "+pi_c3);
-    console.log("pi_c4 is "+pi_c4);
-    console.log("pi_c5 is "+pi_c5);
     var pi_score=pi_c1+pi_c2+pi_c3+pi_c4+pi_c5;
     var piper=pi_score*10/pi_full;
-    var pi_ind=parseInt(piper*100);
-    $('#pidisplay').text("π"+"="+pi_ind/100);
+    var pi_ind=parseInt(piper*100)/100;
+    $('#pidisplay').text("π"+"="+pi_ind);
+    var allpi=[7.05,6.88,9.50,4.78,5.33,7.81,6.10,6.69,8.56,5.71,8.69,2.96,8.86,5.69,4.78,9.28,9.28,3.61,4.83,8.53,8.55,4.90,3.11,7.91,7.97,7.44,7.91,7.68,4.93,8.19,6.56,6.17,6.28,6.97,8.31,7.58,9.28,7.33,8.39,7.42,8.44,3.95,6.72,8.19,7.95,6.42,9.03,6.36,7.53,6.83,7.42,6.25,6.56,4.88,4.61,7.65,5.41,8.00,7.05,8.14,8.28,7.53,6.93,8.09,6.53,4.46,6.16,9.44,6.70,7.97,6.75,3.56,5.00,5.67,6.89,8.90,8.31,8.03,7.25,8.89,6.50,8.14,6.34,4.14,7.81,6.60,7.33,5.30,6.89,6.22,3.44,5.13,6.88,8.69,6.75,7.06,9.03,8.00,6.83,6.18,3.38,4.60,5.69,4.93,4.64,8.40,5.53,5.95,6.04,9.55,7.14,5.36,7.72,8.60,9.63,6.72,4.83,4.88,8.89,7.44,8.14,5.53,5.00,9.33,4.44,9.13,7.42,7.81,7.64,3.11,6.34,8.48,7.25,7.09,9.00,7.85,3.44,6.06,8.40,8.44,6.81,4.19,8.18,8.44,7.72,7.53,8.56,8.91,5.69,6.75,7.64,8.53,5.67,9.05,5.19,6.91,7.97,4.22,3.80,6.59,4.31,4.11,5.67,2.75,7.64,4.36,6.36,8.33,7.95,8.69,7.00,8.34,6.78,8.56,6.13,6.75,4.67,5.44,5.22,8.03,6.56,3.84,4.38,10.00,7.78,4.83,8.90,9.42,9.33,8.55,7.75,7.39,8.45,8.56,4.25,6.28,8.70,6.78,8.06,8.55,5.86,6.78,7.09,7.15,6.92,6.58,7.90,9.34,9.25,8.00,5.94,9.42,7.97,7.81,8.17,7.72,4.28,7.81,7.89,7.39,8.94,4.33,5.98,9.28,6.70,8.14,4.41,6.46,5.29,9.00,7.56,5.88,6.50,7.42,4.00,8.53,6.00,3.11,6.56,8.44,8.53,6.58,5.17,7.25,7.23,7.81,4.50,5.19,6.72,8.88,8.40,7.38,6.85,10.00,5.61,7.69,4.00,7.42,5.95,8.47,6.92,4.85,7.17,8.19,7.97,8.11,6.83,7.91,8.36,7.13,8.91,9.44,7.06,7.42,9.50,7.67,7.81,10.00,8.53,7.72,5.61,8.33,9.17,7.30,7.45,8.72,6.06,9.44,6.19,9.44,8.19,8.53,10.00,8.20,5.19,2.29,7.28,8.75,8.14,8.94,5.69,7.00,5.38,6.67,8.91,7.97,5.36,7.06,5.80,8.61,8.18,6.31,9.28,7.25,9.28,8.83,7.44,8.39,7.13,8.14,7.83,7.75,4.13,8.38,3.79,6.89,4.11,5.86,7.97,6.25,4.53,7.22,6.45,8.86,8.60,9.06,7.90,7.00,3.19,6.09,6.95,8.44,7.17,7.78,7.44,9.38,8.39,8.70,5.29,5.34,9.17,7.97,7.61,5.08,7.88,6.57,8.45,8.28,6.06,8.06,6.28,6.85,8.70,9.05,7.95,7.28,5.33,8.33,7.44,6.75,8.98,2.44,7.90,6.97,4.60,6.80,6.25,6.60,5.53,8.98,6.85,7.67,6.25,8.06,8.50,7.95,6.60,6.34,9.00,9.28,7.43,8.69,7.06,7.81,7.17,8.78,7.08,7.97,7.88,5.86,7.80,7.06,5.50,9.58,6.58,3.80,9.83,7.88,6.67,5.53,4.89,6.56,9.44,9.11,8.61,7.00,8.44,6.69,6.21,7.00,7.16,9.00,7.28,6.44,7.68,7.08,8.56,7.25,6.22,5.05,8.11,6.28,7.72,9.81,9.34,7.23,5.39,5.00,6.75,6.42,8.59,7.34,8.03,4.07,7.16,7.89,8.35,5.00,9.03,7.25,8.72,9.44,3.80,7.43,4.75,7.00,7.91,7.31,7.61,6.40,6.50,8.61,7.58,6.69,7.42,8.44,7.50,6.44,3.36,7.28,6.10,8.14,6.67,9.13,8.33,7.58,7.86,7.17,7.68,6.78,3.28,8.33,6.75,8.03,7.97,8.03,5.35,6.92,6.33,8.53,5.33,5.83,9.13,7.44,8.30,7.39,7.89,6.00,5.88,8.06,7.90,5.80,8.13,5.56,8.83,4.78,10.00,6.40,7.50,8.38,6.75,6.36,4.66,5.29,5.50,7.08,5.25,7.50,5.53,5.53,6.33,8.00,10.00,5.65,7.15,8.19,8.44,7.42,5.28,2.25,2.25,7.09,6.89,7.39,7.97,8.11,7.91,6.44,8.06,6.09,4.11,8.06,8.88,8.05,6.88,2.86,5.67,8.20,6.75,3.82,8.22,5.07,7.65,3.11,6.83,6.36,7.00,6.48,7.17,2.25,8.69,5.47,6.19,4.21,8.10,6.83,5.14,6.93,5.00,1.14,6.00,8.03,7.25,6.00,8.28,4.31,6.67,8.04,6.31,7.15,8.81,6.14,5.91,7.83,7.31,6.40,7.20,5.94,8.44,9.19,8.56,7.80,8.30,5.53,8.22,6.58,6.53,7.64,6.40,4.86,8.45,7.89,9.18,7.38,8.38,7.20,8.56,5.91,8.00,6.13,5.83,8.18,6.38,7.33,8.68,8.86,5.15,7.65,4.25,7.72,7.89,8.68,6.19,5.36,8.83,3.95,8.36,5.11,8.53,7.72,7.56,6.13,7.97,7.50,6.63,6.39,7.88,5.82,6.33,8.08,6.42,8.83,8.34,8.56,7.50,6.89,10.00,7.23,8.06,8.25,6.61,7.91,7.85,6.03,7.56,6.53,7.17,4.50,4.53,7.08,7.31,6.34,7.85,7.09,9.63,7.64,7.53,8.14,7.45,5.33,8.18,8.34,7.38,5.56,6.91,7.28,6.85,6.75,8.95,7.64,4.83,9.11,4.96,6.00,9.83,6.64,6.58,7.28,5.50,6.45,8.53,7.91,7.91,6.69,6.56,8.44,7.81,8.86,7.28,7.44,8.63,9.17,7.42,7.78,5.69,5.14,8.89,7.53,7.68];
 
-  };
+allpi.push(pi_ind);
+allpi.sort(function(a,b){return a-b});
+var indofpiind=allpi.indexOf(pi_ind);
+var percenti=parseInt(indofpiind*10000/(allpi.length))/100;
+$('#pipercentile').text(percenti+"% of all respondents had their Pi Index lower than yours.");
+};
 </script>
 </html>
